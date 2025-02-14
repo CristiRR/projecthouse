@@ -33,7 +33,7 @@ class UserController extends Controller
        
         //query builder
         //$user =DB::table('users')->get();
-
+       
         return UserResourde::collection($users);
     }
 
