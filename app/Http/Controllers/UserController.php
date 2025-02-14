@@ -28,7 +28,7 @@ class UserController extends Controller
         function (Builder $query): void{
             $query->where('email', 'like', '%'.request ()->input('email').'%')->get();
         })
-        ->paginate();
+        ->paginate(request()->per_page);
          
        
         //query builder
